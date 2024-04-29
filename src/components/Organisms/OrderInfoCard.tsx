@@ -1,15 +1,14 @@
 import { ReactNode } from "react";
 import OrderInfoDetail from "@/components/Molecules/OrderInfoDetail";
 import SectionTitle from "@/components/Atoms/SectionTitle";
+import PaymentCardLayout from "@/components/Layout/PaymentCardLayout";
 
 interface Props {
   children: ReactNode;
 }
 
 function OrderInfoCard({ children }: Props) {
-  return (
-    <section className="flex flex-col gap-5 bg-white p-5">{children}</section>
-  );
+  return <PaymentCardLayout>{children}</PaymentCardLayout>;
 }
 
 OrderInfoCard.Title = SectionTitle;

@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { Badge } from "@/components/Atoms/badge";
+import DetailNameTitle from "@/components/Atoms/DetailNameTitle";
 
 interface Props {
   src: string;
@@ -11,7 +12,7 @@ function OrderInfoDetail({ src, alt }: Props) {
     <article className="flex gap-5">
       <Image src={src} alt={alt} width={92} height={92} />
       <div className="flex flex-col gap-2">
-        <h6 className="text-sm">Daily facial Soap</h6>
+        <DetailNameTitle>Daily facial Soap</DetailNameTitle>
         <div className=" text-sm flex gap-2">
           <Badge
             variant={"outline"}
